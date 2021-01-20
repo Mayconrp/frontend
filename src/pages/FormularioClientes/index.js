@@ -2,7 +2,7 @@ import React , { Component } from 'react';
 import './style.css'
 import api from '../../services/api'
 
-class Formulario extends Component {
+class FormularioClientes extends Component {
     constructor(props){
         super(props)
 
@@ -104,4 +104,4 @@ class Formulario extends Component {
     }
 }
 
-export default Formulario
+export default FormularioClientes

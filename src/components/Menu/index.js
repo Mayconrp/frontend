@@ -1,14 +1,12 @@
 import React, { Component } from "react" ;
 import { Switch , Route, BrowserRouter} from 'react-router-dom' ;
+import './style.css';
 /* import { Switch , Route, BrowserRouter, Link } from 'react-router-dom' ; */
-
 import Home from '../../pages/Home' ;
-import Formulario from '../../pages/Formulario' ;
 import FormularioColaboradores from '../../pages/FormularioColaboradores';
 import ListaClientes from '../../pages/ClientesList' ;
-
-import './style.css';
 import ListaColaboradores from "../../pages/ColaboradorList";
+import FormularioClientes from "../../pages/FormularioClientes";
 
 export default class Menu extends Component {
 
@@ -45,7 +43,7 @@ export default class Menu extends Component {
                     <Switch>
                         <Route exact path="/" component={Home}></Route>
                         
-                        <Route path="/cadastrar-cliente" component={Formulario}></Route> 
+                        <Route path="/cadastrar-cliente" component={FormularioClientes}></Route> 
 
                         <Route path="/cadastrar-colaborador" component={FormularioColaboradores}></Route> 
                     
