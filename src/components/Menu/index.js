@@ -1,5 +1,6 @@
 import React, { Component } from "react" ;
-import { Switch , Route, BrowserRouter, Link } from 'react-router-dom' ;
+import { Switch , Route, BrowserRouter} from 'react-router-dom' ;
+/* import { Switch , Route, BrowserRouter, Link } from 'react-router-dom' ; */
 
 import Home from '../../pages/Home' ;
 import Formulario from '../../pages/Formulario' ;
@@ -19,21 +20,26 @@ export default class Menu extends Component {
             <div>
                 <BrowserRouter> 
                     <div className="container-menu">
+
                         <div className="item-menu">
+                            <h1 className="link" to="/">Helpeme.com.br</h1>
+                        </div>
+
+                        {/* <div className="item-menu">
                             <Link className="link" to="/">Início</Link>
-                        </div>
+                        </div> */}
 
-                        <div className="item-menu">
+                        {/* <div className="item-menu">
                           <Link className="link" to="/cadastrar-cliente">Cadastrar Cliente</Link>
-                        </div>
+                        </div> */}
 
-                        <div className="item-menu">
+                        {/* <div className="item-menu">
                             <Link className="link" to="/clientes">Lista de clientes</Link>
-                        </div>
+                        </div> */}
 
-                         <div className="item-menu">
+                         {/* <div className="item-menu">
                             <Link className="link" to="/cadastrar-colaborador">Cadastrar Colaborador</Link>
-                        </div>
+                        </div> */}
                     </div> 
                     <Switch>
                         <Route exact path="/" component={Home}></Route>
