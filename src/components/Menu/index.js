@@ -21,7 +21,7 @@ export default class Menu extends Component {
                     <div className="container-menu">
 
                         <div className="item-menu">
-                            <h1 className="link" to="/">Helpeme.com.br</h1>
+                            <h1 className="link" to="/">helpeme.com.br</h1>
                         </div>
 
                         {/* <div className="item-menu">
