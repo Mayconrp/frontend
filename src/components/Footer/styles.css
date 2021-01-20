@@ -1,0 +1,13 @@
+.main-footer{
+    position:relative;
+    bottom:0;
+    width:100%;
+    margin-top: 5%;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0px 250px 0px;
+    background: #dceaf1;
+}   

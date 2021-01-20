@@ -1,0 +1,13 @@
+
+.container-home{
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0px 5% 0px;
+}   
+
+.item-home{
+    padding: 10px 10px 10px 10px;
+}
