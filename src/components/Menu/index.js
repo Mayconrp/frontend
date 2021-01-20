@@ -8,6 +8,7 @@ import FormularioColaboradores from '../../pages/FormularioColaboradores';
 import ListaClientes from '../../pages/ClientesList' ;
 
 import './style.css';
+import ListaColaboradores from "../../pages/ColaboradorList";
 
 export default class Menu extends Component {
 
@@ -49,6 +50,8 @@ export default class Menu extends Component {
                         <Route path="/cadastrar-colaborador" component={FormularioColaboradores}></Route> 
                     
                         <Route path="/clientes" component={ListaClientes}></Route>
+
+                        <Route path="/colaboradores" component={ListaColaboradores}></Route>
                 
                     </Switch>
                 </BrowserRouter>
