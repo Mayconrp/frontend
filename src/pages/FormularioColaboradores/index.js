@@ -39,7 +39,7 @@ class FormularioColaboradores extends Component {
                     </div>
                         <div className="col-50" >
                             <h1 className="tituloh1">Seja um colaborador ! ;) </h1>
-                            <h3 className="tituloh3"><p className="textoh3">Preencha o Formulário, entraremos em contato assim que houver novas oportunidades em sua região.</p>
+                            <h3 className="tituloh3"><p className="textoh3">Preencha o formulário, entraremos em contato assim que houver novas oportunidades em sua região.</p>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             {/* &nbsp;&nbsp;&nbsp;&nbsp;<p className="textoh3">Deixe com a gente o seu contato, para que possamos nos conectar.</p> */}</h3>
                         </div>
