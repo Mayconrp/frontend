@@ -24,14 +24,14 @@ class FormularioColaboradores extends Component {
             .then(response => {
                 console.log(response)
                 alert("Colaborador cadastrado com sucesso! ")
-                this.limparForm()
+                this.limpaForm()
             })
             .catch(error => {
                 alert("Erro: " + error)
             })           
     }
 
-    limparForm(){
+    limpaForm(){
         this.setState({ nome: '', telefone: '', endereco: '', profissao: ''})
     }
 
