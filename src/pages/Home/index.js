@@ -14,7 +14,7 @@ class Home extends Component {
                         </div>
 
                         <div className="item-home">
-                          Voce esta na home
+                          Bem vindo ao helpeme.com.br !
                         </div>
 
                         <div className="item-home">
