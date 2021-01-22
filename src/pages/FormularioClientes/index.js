@@ -23,11 +23,16 @@ class FormularioClientes extends Component {
         await api.post('/cadastrar-cliente',this.state)
             .then(response => {
                 console.log(response)
-                alert("Usuario cadastrado com sucesso! ")
+                alert("Cliente cadastrado com sucesso! ")
+                this.limparForm()
             })
             .catch(error => {
                 alert("Erro: " + error)
             })           
+    }
+
+    limparForm(){
+        this.setState({ nome: '', telefone: '', endereco: '', problema: ''})
     }
 
     render(){
