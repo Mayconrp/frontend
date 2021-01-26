@@ -27,7 +27,8 @@ class FormularioColaboradores extends Component {
                 this.limpaForm()
             })
             .catch(error => {
-                alert("Erro: " + error)
+                alert("Telefone deve ser preenchido somente com números e sem espaços! ")
+                //alert("Erro: " + error)
             })           
     }
 
@@ -69,7 +70,7 @@ class FormularioColaboradores extends Component {
                         </div>
                             <div className="col-50" ><br/>
                             <label>Telefone com (ddd):</label>
-                            <input type="text" name="telefone" value={telefone} placeholder="Máximo 11 numeros" className="Form-Field" onChange={this.changeHandler}/>
+                            <input type="text" name="telefone" value={telefone} placeholder="Máximo 11 números, sem espaços e somente números" className="Form-Field" onChange={this.changeHandler}/>
                             </div>
                         <div className="col-r-25" >                        
                         </div>
