@@ -34,19 +34,19 @@ class FormularioColaboradores extends Component {
 
     validaForm(props){
         if(this.state.nome === ""){
-            alert("Nome nao pode ser vazio!")
+            alert("O campo nome não pode ser vazio!")
         }
         if(this.state.telefone.length > 11 || this.state.telefone.length < 10 ){
             alert("O campo telefone deve ter entre 10 e 11 numeros sem espaços e sem carcteres!")
             if(this.state.telefone === ""){
-                alert("Telefone nao pode ser vazio!")
+                alert("O campo telefone não pode ser vazio!")
             }
         }
         if(this.state.endereco === ""){
-            alert("Endereco nao pode ser vazio!")
+            alert("O campo endereço não pode ser vazio!")
         }
         if(this.state.profissao === ""){
-            alert("Profissao nao pode ser vazio!")
+            alert("O campo profissão não pode ser vazio!")
         }
     }
 
