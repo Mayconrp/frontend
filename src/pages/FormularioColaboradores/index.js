@@ -20,6 +20,7 @@ class FormularioColaboradores extends Component {
     
     submitHandler = async e => {
         e.preventDefault()
+        this.validaForm()
         await api.post('/cadastrar-colaborador',this.state)
             .then(response => {
                 console.log(response)
@@ -27,9 +28,26 @@ class FormularioColaboradores extends Component {
                 this.limpaForm()
             })
             .catch(error => {
-                alert("Telefone deve ser preenchido somente com números e sem espaços! ")
-                //alert("Erro: " + error)
+                console.log(""+error)
             })           
+    }
+
+    validaForm(props){
+        if(this.state.nome === ""){
+            alert("Nome nao pode ser vazio!")
+        }
+        if(this.state.telefone.length > 11 || this.state.telefone.length < 10 ){
+            alert("O campo telefone deve ter entre 10 e 11 numeros sem espaços e sem carcteres!")
+            if(this.state.telefone === ""){
+                alert("Telefone nao pode ser vazio!")
+            }
+        }
+        if(this.state.endereco === ""){
+            alert("Endereco nao pode ser vazio!")
+        }
+        if(this.state.profissao === ""){
+            alert("Profissao nao pode ser vazio!")
+        }
     }
 
     limpaForm(){
@@ -70,7 +88,7 @@ class FormularioColaboradores extends Component {
                         </div>
                             <div className="col-50" ><br/>
                             <label>Telefone com (ddd):</label>
-                            <input type="text" name="telefone" value={telefone} placeholder="Máximo 11 números, sem espaços e somente números" className="Form-Field" onChange={this.changeHandler}/>
+                            <input type="text" name="telefone" value={telefone} placeholder="Digite seu telefone sem espaços e sem caracteres" className="Form-Field" onChange={this.changeHandler}/>
                             </div>
                         <div className="col-r-25" >                        
                         </div>
