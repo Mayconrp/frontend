@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/css/componentes/cartao.css'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Sobre = () => {
 
@@ -16,9 +16,8 @@ const Sobre = () => {
 
 
           <br/><br/><br/>
-          <a href="/">Click aqui para ver os artigos</a>
-
-          {/* <Link to="/" className="menu-item ">Click aqui para ver os artigos</Link> */}
+          
+        <Link to="/">Click aqui e veja os artigos</Link>
         </article>
         
       </section>
