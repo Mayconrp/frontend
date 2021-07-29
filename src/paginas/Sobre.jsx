@@ -10,7 +10,7 @@ const Sobre = () => {
       </div>
       <section className="container flex flex--centro">
         <article className="cartao">
-          De pecadores para pecadores, em busca dos ensinamentos de Jesus, com direito a erros ortográficos e linguagem informal.
+          Em busca dos ensinamentos de Jesus, com direito a erros ortográficos e linguagem informal.
         </article>
         
       </section>
