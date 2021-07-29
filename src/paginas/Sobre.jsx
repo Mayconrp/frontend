@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/css/componentes/cartao.css'
+// import { Link } from 'react-router-dom'
 
 const Sobre = () => {
 
@@ -11,7 +12,13 @@ const Sobre = () => {
       <section className="container flex flex--centro">
         <article className="cartao">
           Em busca dos ensinamentos de Jesus, com direito a erros ortográficos e linguagem informal. De início publicação
-          todas as sextas feiras, as 16 horas .
+          todas as sextas feiras, as 16 horas. 
+
+
+          <br/><br/><br/>
+          <a href="/">Click aqui para ver os artigos</a>
+
+          {/* <Link to="/" className="menu-item ">Click aqui para ver os artigos</Link> */}
         </article>
         
       </section>
