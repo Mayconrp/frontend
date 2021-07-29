@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'http://localhost:8080/api'
+    baseURL: 'https://frozen-escarpment-47429.herokuapp.com'
 })
 
 export const busca = async(url, setDado) => {

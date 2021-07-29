@@ -15,7 +15,7 @@ const Cabecalho = () => {
             <div className="cabecalho-container">
                 <Link to="/" className="flex flex--centro">
                     {/* aqui vai a imagem */}
-                <h1 className="cabecalho__titulo">Hereges</h1>
+                <h1 className="cabecalho__titulo">Helpeme</h1>
                 </Link>
             </div>
              
