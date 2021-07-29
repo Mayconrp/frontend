@@ -22,7 +22,7 @@ const Artigo = () => {
     return(
         <main className="container flex flex__centro">
             <article className="cartao post">
-                <h2 className="cartao__titulo">{post.titulo}</h2>
+                <h1 className="cartao__titulo">{post.titulo}</h1>
 
                 <p> autor:  {post.autor} </p> <br/>
 
