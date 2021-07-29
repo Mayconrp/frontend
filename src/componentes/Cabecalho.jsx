@@ -15,7 +15,7 @@ const Cabecalho = () => {
             <div className="cabecalho-container">
                 <Link to="/" className="flex flex--centro">
                     {/* aqui vai a imagem */}
-                <h1 className="cabecalho__titulo">Helpeme</h1>
+                <title className="cabecalho__titulo">Helpeme</title>
                 </Link>
             </div>
              
@@ -23,9 +23,9 @@ const Cabecalho = () => {
                 <ul className="menu-itens">
                     {/* <li><Link to="#" className="menu-item menu-item--entrar">Entrar</Link></li> */}
 
-                    <li><Link to="/" className="menu-item ">Artigos</Link></li>
+                    <h1><Link to="/" className="menu-item ">Artigos</Link></h1>
 
-                    <li><Link to="/sobre" className="menu-item ">Sobre</Link></li>
+                    <h1><Link to="/sobre" className="menu-item ">Sobre</Link></h1>
                 </ul>
             </nav>
 
