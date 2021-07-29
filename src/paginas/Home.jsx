@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main>
       <div className="container">
-        <h2 className="titulo-pagina">Artigos</h2>
+        <h1 className="titulo-pagina">Artigos</h1>
       </div>
      
       <ListaArtigos url={'/artigos'}/>

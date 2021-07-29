@@ -6,7 +6,7 @@ const Sobre = () => {
   return (
     <main>
       <div className="container">
-        <h2 className="titulo-pagina">Sobre </h2>
+        <h1 className="titulo-pagina">Sobre </h1>
       </div>
       <section className="container flex flex--centro">
         <article className="cartao">
