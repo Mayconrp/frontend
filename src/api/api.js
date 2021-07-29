@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'https://infinite-atoll-37268.herokuapp.com/'
+    baseURL: 'https://infinite-atoll-37268.herokuapp.com/api/'
 })
 
 export const busca = async(url, setDado) => {
