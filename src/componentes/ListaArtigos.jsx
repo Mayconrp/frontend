@@ -13,7 +13,7 @@ const ListaArtigos = ( {url} ) => {
 
         setTimeout(() =>{
             setIsLoading(false)
-        }, 4000 );
+        }, 3000 );
 
         busca(url, setPosts)
 
@@ -21,7 +21,7 @@ const ListaArtigos = ( {url} ) => {
 
 
     return(
-        <section id="teste" className="posts container">
+        <section className="posts container">
 
             { isLoading === true ?
                 <Loading/> :
