@@ -1,16 +1,22 @@
-import React from 'react'
-import ListaArtigos from '../componentes/ListaArtigos'
+import React, {Suspense} from 'react'
+// import ListaArtigos from '../componentes/ListaArtigos'
+import Loading from '../componentes/loading'
+
+const ListaArtigos = React.lazy(() => import("../componentes/ListaArtigos"))
 
 const Home = () => {
 
   return (
     <main>
-      <div className="container">
-        <h1 className="titulo-pagina">Artigos</h1>
-      </div>
-     
-      <ListaArtigos url={'/artigos'}/>
 
+      <div className="container">
+        <h2 className="titulo-pagina">Artigos</h2>
+      </div>
+    
+      <Suspense fallback={<Loading/> }> 
+        <ListaArtigos url={'/artigos'}/>
+      </Suspense>
+    
     </main>
   )
 }

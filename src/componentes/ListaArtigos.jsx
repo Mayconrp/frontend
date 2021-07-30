@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { busca } from '../api/api';
-import logo from '../assets/img/loading2.gif'
+
 
 const ListaArtigos = ( {url} ) => {
     
@@ -16,7 +16,6 @@ const ListaArtigos = ( {url} ) => {
     return(
         <section className="posts container">
 
-            <img id='maycon' style={{height:50, width: 50, position: 'fixed', zIndex: '-1' , marginTop: '7%'}} src={logo} alt={"logo"}/> 
 
             {
 
