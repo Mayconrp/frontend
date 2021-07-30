@@ -16,7 +16,7 @@ const ListaArtigos = ( {url} ) => {
     return(
         <section className="posts container">
 
-            <img id='maycon' style={{height:50, width: 50, position: 'fixed', zIndex: '-1' , marginTop: '5%'}} src={logo} alt={"logo"}/> 
+            <img id='maycon' style={{height:50, width: 50, position: 'fixed', zIndex: '-1' , marginTop: '7%'}} src={logo} alt={"logo"}/> 
 
             {
 
