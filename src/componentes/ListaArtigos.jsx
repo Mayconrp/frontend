@@ -13,7 +13,7 @@ const ListaArtigos = ( {url} ) => {
 
         setTimeout(() =>{
             setIsLoading(false)
-        }, 2000 );
+        }, 4000 );
 
         busca(url, setPosts)
 
