@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { busca } from '../api/api';
-
+import Loading from './loading';
 
 const ListaArtigos = ( {url} ) => {
     
     const [posts, setPosts] = useState([])
+    
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
 
+        setTimeout(() =>{
+            setIsLoading(false)
+        }, 2000 );
+
         busca(url, setPosts)
+
     }, [url]);
 
 
     return(
-        <section className="posts container">
+        <section id="teste" className="posts container">
 
-
-            {
-
+            { isLoading === true ?
+                <Loading/> :
                 posts.map((post)=> (
                     <Link className={'cartao-post'} to={`/artigos/${post.id}`} >
 
@@ -35,11 +41,11 @@ const ListaArtigos = ( {url} ) => {
                         </article>
 
                     </Link>
-
                 ))
             }
         </section>
     )
 }
+
 
 export default ListaArtigos

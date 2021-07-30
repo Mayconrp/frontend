@@ -5,8 +5,8 @@ import '../assets/css/componentes/loading.css'
 const Loading = () => {
 
     return (
-        <div className="centralizar">
-            <img className="container loading"  src={loading} alt={"loading"}/>
+        <div className="centralizar ">
+            <img className="container"  src={loading} alt={"loading"}/>
         </div>
     )
 }
