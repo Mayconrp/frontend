@@ -36,7 +36,7 @@ const ListaArtigos = ( {url} ) => {
                             <p> Autor:  {post.autor }</p> <br/> <br/>
 
                             <p className="cartao-post__meta">
-                               Publicacao: {post.dataPublicacao}
+                               Publicação: {post.dataPublicacao}
                             </p>
                         </article>
 

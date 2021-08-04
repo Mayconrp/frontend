@@ -37,7 +37,7 @@ const Artigo = () => {
 
                     <p> autor:  {post.autor} </p> <br/>
 
-                    <p> Publicacao:  {post.dataPublicacao} </p> <br/><br/><br/>
+                    <p> Publicação:  {post.dataPublicacao} </p> <br/><br/><br/>
 
                     <p className="cartao__texto">{post.texto}</p>
                 </article>
