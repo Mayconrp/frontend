@@ -27,6 +27,10 @@ function App() {
           <Artigo/>
         </Route>
 
+        <Route path='/cadastrarArtigo.html'> 
+          <Artigo/>
+        </Route>
+
         <Route> 
           <Pagina404/>
         </Route>
