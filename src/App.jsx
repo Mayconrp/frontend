@@ -27,9 +27,9 @@ function App() {
           <Artigo/>
         </Route>
 
-        {/* <Route> 
+        <Route> 
           <Pagina404/>
-        </Route> */}
+        </Route>
 
       </Switch>
     </Router>
