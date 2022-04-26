@@ -33,10 +33,10 @@ const ListaArtigos = ( {url} ) => {
                                 {post.titulo}
                             </h3>
 
-                            <p> Autor:  {post.autor }</p> <br/> <br/>
+                            <p> Endereço:  {post.autor}</p> <br/> <br/>
 
                             <p className="cartao-post__meta">
-                               Publicação: {post.dataPublicacao}
+                               Cadastro: {post.dataPublicacao}
                             </p>
                         </article>
 

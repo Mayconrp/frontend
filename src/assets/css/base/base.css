@@ -40,6 +40,23 @@ body {
 	padding-left: 2rem;
 }
 
+.search {
+	width: 85%;
+	height: 20%;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 1px 6px 0 grey;
+	margin: 5% 0% 8% 0%;
+}
+
+.divsearch {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 @media(min-width: 800px) {
   .container {
 		padding-right: 2.5rem;

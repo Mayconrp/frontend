@@ -14,18 +14,20 @@ const Artigo = () => {
 
     const [isLoading, setIsLoading] = useState(true)
 
-    useEffect(() => {
+    useEffect((history) => {
 
         setTimeout(() =>{
             setIsLoading(false)
         }, 2000 );
 
         busca(`/artigos/${id}`, setPost)
+        
         .catch(()=> {
                 history.push('/404')
             }
         )
-    }, [id]);
+        
+    }, [id, history]);
 
     return(
         <div><br/><br/>
@@ -35,9 +37,9 @@ const Artigo = () => {
                 <article className="cartao post">
                     <h1 className="cartao__titulo">{post.titulo}</h1>
 
-                    <p> autor:  {post.autor} </p> <br/>
+                    <p> Endereço:  {post.autor} </p> <br/>
 
-                    <p> Publicação:  {post.dataPublicacao} </p> <br/><br/><br/>
+                    <p> Cadastro:  {post.dataPublicacao} </p> <br/><br/><br/>
 
                     <p className="cartao__texto">{post.texto}</p>
                 </article>

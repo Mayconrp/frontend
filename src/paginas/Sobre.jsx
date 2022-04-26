@@ -11,13 +11,13 @@ const Sobre = () => {
       </div>
       <section className="container flex flex--centro">
         <article className="cartao">
-          Em busca dos ensinamentos de Jesus, com direito a erros ortográficos e linguagem informal. De início publicação
-          todas as sextas feiras, as 16 horas. 
-
-
-          <br/><br/><br/>
           
-        <Link to="/">Click aqui e veja os artigos</Link>
+        Com o objetivo de ajudar os comerciantes locais. O Helpeme.com.br, ajuda os consumidores da região a encontrar os produtos de forma rápida
+        e dinânima.
+
+        <br/><br/><br/>
+          
+        <Link to="/">Click aqui e veja as lojas e serviços</Link>
         </article>
         
       </section>
